@@ -6,10 +6,7 @@
   "jsnext:main": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -cw",
-    "lint": "standard --fix rollup.config.js src/**",
-    "prepare": "yarn lint && yarn build",
-    "test": "cd test && rollup -c || cd .."
+    "lint": "eslint */**/*.{js,ts,tsx} --fix"
   },
   "author": "Evgenii Dobrovidov <mr.nate.river@gmail.com>",
   "homepage": "https://github.com/mrnateriver/rollup-library-starter",
